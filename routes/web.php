@@ -13,4 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
 Route::get('/controller/word/{num1}/{function}/{num2}', [App\Http\Controllers\calcsController::class,'word']);
